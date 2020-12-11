@@ -38,7 +38,7 @@ export default function EditSchedule() {
             })
        
         }
-    },[accept])
+    },[accept, eventList])
 
     const getEventByName = () => {
         axios({

@@ -26,7 +26,7 @@ export default function UpdateStar() {
                 setData(star)
             }
         })
-    },[data, context])
+    },[])
    
     
     const updateProfile = () => {

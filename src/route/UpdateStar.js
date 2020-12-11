@@ -5,7 +5,7 @@ import axios from 'axios'
 
 export default function UpdateStar() {
     const context = useContext(myContext)
-    const [age, setAge] = useState()
+    // const [age, setAge] = useState()
     const [profile, setProfile] = useState()
     const [data, setData] = useState()
 
@@ -55,9 +55,9 @@ export default function UpdateStar() {
             </h3>
             <div className="forms">
                 <ul>
-                    <li>
+                    {/* <li>
                         <input placeholder="Enter your current age here." type="text" onChange={(e) => setAge(e.target.value)}/>
-                    </li>
+                    </li> */}
                     <li>
                         
                         <input placeholder="Enter your new profile here." type="text" id="large-input" onChange={(e) => setProfile(e.target.value)}/>

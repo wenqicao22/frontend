@@ -28,7 +28,7 @@ function App(props) {
       // setMessage(res.data.message)
       if (res.data.message === "The user login successfully."){
         console.log("login successfully")
-        alert("please refresh after login")
+        alert("Login successfully")
         props.history.push('/home')
         window.location.reload(true);
       }

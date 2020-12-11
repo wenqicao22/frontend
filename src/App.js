@@ -7,8 +7,8 @@ import axios from 'axios'
 function App(props) {
   const [loginUsername, setloginUsername] = useState("")
   const [loginPassword, setloginPassword] = useState("")
-  const [managerStatus, setManagerStatus] = useState("")
-  const [message, setMessage] = useState("star")
+  // const [managerStatus, setManagerStatus] = useState("")
+  // const [message, setMessage] = useState("star")
 
 
 
@@ -48,12 +48,12 @@ function App(props) {
           <li>
             <input  type="password" placeholder="password" onChange={(e) => setloginPassword(e.target.value)}/>
           </li>
-          <li>
+          {/* <li>
             <input type='radio' name='userType' id='manager' value='manager' onClick={(e) => setManagerStatus(e.target.value)}/>
             <label htmlFor='manager'>Manager</label>
             <input required type='radio' name='userType' id='star' value='star' />
             <label htmlFor='star' >Star</label>
-          </li>
+          </li> */}
           <li>
             <button onClick={login}>Submit</button>
           </li>

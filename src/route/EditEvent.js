@@ -63,9 +63,9 @@ function EditEvent () {
         <select onChange={e => setSelectedEvent(e.target.value)} name='deleteevent' id='deleteevent'>
         <option id="Select-A-Event">Select A Event</option>
         {
-          data.map((element) => {
+          data.map((element, index) => {
             return (
-              <option key={element.name} id={element.name}>{element.name}</option>
+              <option key={index} id={index} value={element.name}>{element.name}</option>
             )
           })
         }

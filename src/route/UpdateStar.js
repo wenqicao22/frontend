@@ -55,9 +55,7 @@ export default function UpdateStar() {
             </h3>
             <div className="forms">
                 <ul>
-                    {/* <li>
-                        <input placeholder="Enter your current age here." type="text" onChange={(e) => setAge(e.target.value)}/>
-                    </li> */}
+                    
                     <li>
                         
                         <input placeholder="Enter your new profile here." type="text" id="large-input" onChange={(e) => setProfile(e.target.value)}/>

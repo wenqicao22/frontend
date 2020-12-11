@@ -18,7 +18,7 @@ function EditEvent () {
     .then ((res) => {
       setData(res.data)
     })
-  },[])
+  },[data])
     
   if (context.managerOrStar !== "manager") {
     return (

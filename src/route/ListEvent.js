@@ -38,8 +38,7 @@ export default function ListEvent() {
         .then((res) => {
             setEvents(res.data)
         })
-    },[])
-
+    },[events])
     if (context.managerOrStar !== "manager") {
         return (
             <div className="non-admin">

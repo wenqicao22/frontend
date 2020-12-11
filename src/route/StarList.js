@@ -31,7 +31,7 @@ export default function StarList() {
             setData(filteredData)
             
         })
-    },[])
+    },[data])
     if (context.managerOrStar !== "manager") {
         return (
             <div className="non-admin">

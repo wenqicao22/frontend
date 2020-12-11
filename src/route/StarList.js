@@ -23,7 +23,7 @@ export default function StarList() {
         })
         .then ((res) => {
             const filteredData = []
-            res.data.forEach(element => {
+            res.data.forEach((element) => {
                 if (element.manager === context.username) {
                     filteredData.push(element)
                 }
@@ -31,7 +31,7 @@ export default function StarList() {
             setData(filteredData)
             
         })
-    },[data, context])
+    },[])
     if (context.managerOrStar !== "manager") {
         return (
             <div className="non-admin">

@@ -25,7 +25,7 @@ function App(props) {
     })
     .then((res) => {
       console.log("login:",res)
-      setMessage(res.data.message)
+      // setMessage(res.data.message)
       if (res.data.message === "The user login successfully."){
         console.log("login successfully")
         alert("please refresh after login")
